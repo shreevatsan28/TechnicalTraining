@@ -1,0 +1,38 @@
+1)s
+import java.util.*;
+public class Automobile{
+ public static void main(String[] args)
+  {
+    Scanner in = new Scanner(System.in);
+    int v = in.nextInt();
+    int w = in.nextInt();
+    int res = ((4*v)-w)/2;
+    if(w>=2 && (w%2==0) && v<w)
+       System.out.println("TW= "+(res)+" FW= "+(v-res));
+    else
+       System.out.println("INVALID INPUT");
+}
+}
+
+
+2)
+import java.util.Scanner;
+class Main {
+	public static void main(String srgs[])
+	{
+  	 Scanner in = new Scanner(System.in);
+	 int N = in.nextInt();
+         int product = 1;
+	 in.close();
+	 if (N == 0) {
+             System.out.print(N);
+	     System.exit(0);
+          }
+          while(N != 0) {
+               product *= N % 10;
+ 	       N /= 10;
+          }
+	    System.out.print(product);
+   }
+}
+
